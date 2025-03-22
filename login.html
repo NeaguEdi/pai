@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Pagina de articole sportive">
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+</head>
+
+<body id="main_body">
+    <h1 id="Titlul_paginii">Login</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="tipuriDeSport.html">Tipuri de sport</a>
+        <a class="item_navigator" href="imbracaminte.html">Îmbrăcăminte</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="activ" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+    </nav>
+    <div class="main_div">
+        <form action="#" method="post">
+            <div class="containerul_pozei_de_profil">
+                <img src="user_photo.PNG" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="containerul">
+                <label for="username"><b>Nume de utilizator:</b></label>
+                <input class="login_input" type="text" placeholder="Introdu username-ul:" name="uname" required>
+                <br><br>
+                <label for="parola"><b>Parolă:</b></label>
+                <input class="login_input" type="password" placeholder="Introdu parola:" name="psw" required style="margin-left: 82px;">
+                <br><br><br>
+                <button class="button-logare" type="submit">Logare</button>
+                <label>
+                    <br>
+                    <input type="checkbox" checked="checked" name="remember"> Ține-mă minte
+                </label>
+            </div>
+
+            <div class="containerul">
+                <button type="button" class="buton_de_cancel">Anulează</button>
+                <span class="psw">Ai uitat <a href="#" style="color: red;">parola</a> ?</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

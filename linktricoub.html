@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <meta name="description" content="Papuci Abibas">
+        <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian">
+        <title>Articole sportive</title>
+        <link rel="icon" type="image/x-icon" href="icon.png"  >
+        <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .selected {
+            border: 3px solid red;
+        }
+
+        .big-image-container {
+            margin-top: 20px;
+        }
+        .big-image {
+            max-width: 80%;
+            max-height: 400px;
+            border: 3px solid #555;
+            border-radius: 8px;
+        }
+    </style>
+
+    </head>
+    <body>
+        <h1 id="Titlul_paginii">Tricou barbati</h1>
+        <nav class="navigator">
+        <a class="activ" href="index.html">Acasă</a>
+        <a class="item_navigator" href="imbracaminte.html">Îmbrăcăminte</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <a class="item_navigator" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+        </nav>
+
+        
+        <h2>Galerie de Imagini</h2>
+        <div class="gallery">
+        <img src="tricou (1).jpg" class="selected" onclick="showBigImage(this)">
+        <img src="tricou (2).jpg" onclick="showBigImage(this)">
+        <img src="tricou (3).jpg" onclick="showBigImage(this)">
+        <img src="tricou (4).jpg" onclick="showBigImage(this)">
+        </div>
+
+        <div class="big-image-container">
+        <img id="bigImg" class="big-image" src="poza1.jpg">
+        </div>
+
+        <script>
+        function showBigImage(img) {
+            var bigImg = document.getElementById("bigImg");
+            bigImg.src = img.src;
+            var allImages = document.querySelectorAll(".gallery img");
+            allImages.forEach(image => image.classList.remove("selected"));
+            img.classList.add("selected");
+        }
+        </script>
+        <h2>PRET: 899,49 LEI
+            <br>MARIME:<select name="marime papuci">
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                </select>
+        </h2>
+        <div class="container">
+            <h1>Bicicleta MTB Terrana 2923</h1>
+            <p><strong>Bicicleta Mtb Terrana 2923</strong> este o bicicletă <strong>all mountain</strong>, echipată pentru evadarea ta offroad.</p>
+            <p><strong>MTB Terrana 2923</strong> este un <strong>hardtail aluminiu</strong>, echipată <strong>Shimano</strong>, suspensie față, frână V-brake, <strong>3x7 viteze</strong>, roți de 29 inch echipate Kenda.</p>
+            <p>Descoperă gama noastră variată de biciclete MTB pe afisport.ro, ideale pentru aventurieri și pasionați de ciclism off-road.</p>
+            <p>Fie că ești în căutarea performanței pe trasee montane sau pur și simplu vrei să explorezi natura, bicicletele noastre MTB sunt proiectate pentru a oferi o experiență de neuitat, combinând durabilitatea, confortul și tehnologia de vârf.</p>
+            <p>Alege modelul potrivit pentru stilul tău și pregătește-te să cucerești orice teren!</p>
+        </div>
+    </body>
+    
+</html>

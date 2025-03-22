@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="Pagina de articole sportive" />
+    <meta name="author" content="co-authored by Neagu Eduard, Schiopu Cristian" />
+    <title>Articole sportive</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" type="text/css" href="macheta.css" title="Foaie de stiluri" />
+</head>
+
+<body id="main_body">
+    <h1 id="Titlul_paginii">Înregistrează-te!</h1>
+    <nav class="navigator">
+        <a class="item_navigator" href="index.html">Acasă</a>
+        <a class="item_navigator" href="tipuriDeSport.html">Tipuri de sport</a>
+        <a class="item_navigator" href="imbracaminte.html">Îmbrăcăminte</a>
+        <a class="item_navigator" href="articoleSportive.html">Articole sportive</a>
+        <a class="activ" href="inregistrare_user.html">Înregistrează-te</a>
+        <a class="item_navigator" href="login.html">Login</a>
+        <a class="item_navigator" href="contact.html">Contact</a>
+    </nav>
+    <div class="main_div">
+        <h2>Înregistrare</h2>
+
+        <fieldset style="background-color: orange; border: 1px dotted red">
+            <legend style="background-color: blue; color: white">
+                Informatii generale:
+            </legend>
+            Numele utilizatorului:
+            <input class="input_inregistreaza" type="text" size="40" placeholder="Nume_utilizator" /><br /><br />
+            Parola:<input class="input_inregistreaza" type="password" size="40" placeholder="Parola" /><br /><br />
+            Nume:<input class="input_inregistreaza" type="text" size="40" /><br /><br />
+            Prenume:<input class="input_inregistreaza" type="text" size="40" /><br /><br />
+            Email:<input class="input_inregistreaza" type="text" size="40" placeholder="...@domeniu.com" /><br /><br />
+            Telefon:<input class="input_inregistreaza" type="text" size="40" placeholder="07xx xxx xxx" />
+        </fieldset>
+
+        <fieldset style="background-color: orange; border: 1px dashed green; margin-top:10px;">
+            <legend style="background-color: blue; color: white">
+                Informatii personale:
+            </legend>
+            Poza de profil:
+            <input type="file" name="fisier" /><br /><br />
+            Genul:
+            <select name="Genul de persoana(M/F)">
+                <option value="M">Masculin</option>
+                <option value="F">Feminin</option>
+            </select><br /><br />
+            Copil:<br />
+            <input type="radio" name="copil" />Da<br />
+            <input type="radio" name="copil" />Nu<br /><br />
+            <br />
+            <textarea rows="10" cols="20" placeholder="Descrie-te:"></textarea>
+            <br /><br />
+            <input type="button" value="Înregistrare"
+                style="background-color: #eb0e16;  padding: 5px;  border: none;  border-radius: 11px;  width: 90px;  height: 40px;  font-size: 15px; color:white;" />
+        </fieldset>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+#Titlul_paginii {
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 0%;
+  font-size: 40px;
+  color: blue;
+}
+
+.navigator {
+  background-color: lime;
+  display: flex;
+  padding: 10px;
+  position: relative;
+  margin-left: 28%;
+  width: 58%;
+  border: 3px solid blue;
+  border-radius: 15px;
+
+}
+
+.item_navigator,
+.activ {
+  text-decoration: none;
+  position: relative;
+  padding: 10px 20px;
+  color: blue;
+}
+
+
+.item_navigator a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.item_navigator:hover,
+.activ:hover {
+  background-color: red;
+  color: blue;
+}
+
+.activ:not(:visited) {
+  background-color: yellow;
+}
+
+
+/* #main_body {
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  width:100%;
+} */
+
+.main_div_acasa {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+}
+
+.main_div {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.img-acasa {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  border: 10px solid rgb(254, 250, 224);
+}
+
+input.login_input[type="text"],
+input.login_input[type="password"] {
+  width: 35%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  /* position: absolute;
+  left: 180px; */
+}
+
+.button-logare {
+  background-color: #0ca816;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 42%;
+  font-size: 15px;
+}
+
+.button-logare:hover {
+  background-color: #00ff08;
+}
+
+.buton_de_cancel {
+  margin: 0;
+  padding: 10px 10px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  border-radius: 0;
+  display: block;
+  width: 5%;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.buton_de_cancel:hover {
+  opacity: 0.8;
+  background-color: #a80c5d;
+}
+
+.containerul_pozei_de_profil {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.containerul {
+  padding: 16px;
+  align-content: center;
+  background-color: #2588c2;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.input_inregistreaza {
+  position: absolute;
+  left: 275px;
+}
